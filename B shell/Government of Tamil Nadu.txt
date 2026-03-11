@@ -1,0 +1,23 @@
+echo "Government of Tamil Nadu"
+echo "Electricity Bill"
+echo "-----------------------"
+
+echo "Enter the EB No:"
+read n
+
+echo "Enter the Consumer Name:"
+read name
+
+echo "Enter Previous Unit:"
+read pu
+
+echo "Enter Current Unit:"
+read cu
+
+echo "Report"
+
+month=`expr $cu - $pu`
+echo "Unit Consumed this month : $month units"
+
+amt=`expr $month \* 5`
+echo "Amount to be paid INR : $amt"
